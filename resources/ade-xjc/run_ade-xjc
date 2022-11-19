@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+#######################################################
+##
+##  UN*X start script for converting the Quality ADE
+##
+#######################################################
+
+OUTPUT="src-gen"
+BINDING="binding.xjb"
+SCHEMA="qualityAde.xsd"
+PLUGINS="-Xnamespace-prefix"
+
+exec ../ade-xjc $PLUGINS -clean -output $OUTPUT -binding $BINDING $SCHEMA

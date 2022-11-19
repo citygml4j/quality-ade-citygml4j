@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings version="2.1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:namespace="http://jaxb2-commons.dev.java.net/namespace-prefix">
+  
+  <jaxb:bindings schemaLocation="qualityAde.xsd" node="/xs:schema">
+    <jaxb:schemaBindings>
+      <jaxb:package name="de.hft.stuttgart.qualityade._0_1_4"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings>
+      <namespace:prefix name="qual"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='validationResult']">
+      <jaxb:factoryMethod name="ValidationResultProperty"/>
+    </jaxb:bindings>
+    
+    <!-- use more readable names for error types -->
+    <jaxb:bindings node="xs:element[@name='GE_P_HOLE_OUTSIDE']">
+      <jaxb:factoryMethod name="PolygonHoleOutside"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_HOLE_OUTSIDEType']">
+      <jaxb:class name="PolygonHoleOutsideType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_HOLE_OUTSIDEPropertyType']">
+      <jaxb:class name="PolygonHoleOutsidePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_INNER_RINGS_NESTED']">
+      <jaxb:factoryMethod name="PolygonInnerRingsNested"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INNER_RINGS_NESTEDType']">
+      <jaxb:class name="PolygonInnerRingsNestedType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INNER_RINGS_NESTEDPropertyType']">
+      <jaxb:class name="PolygonInnerRingsNestedPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_INTERIOR_DISCONNECTED']">
+      <jaxb:factoryMethod name="PolygonInteriorDisconnected"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INTERIOR_DISCONNECTEDType']">
+      <jaxb:class name="PolygonInteriorDisconnectedType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INTERIOR_DISCONNECTEDPropertyType']">
+      <jaxb:class name="PolygonInteriorDisconnectedPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_INTERSECTING_RINGS']">
+      <jaxb:factoryMethod name="PolygonIntersectingRings"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INTERSECTING_RINGSType']">
+      <jaxb:class name="PolygonIntersectingRingsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_INTERSECTING_RINGSPropertyType']">
+      <jaxb:class name="PolygonIntersectingRingsPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_NON_PLANAR_POLYGON_DISTANCE_PLANE']">
+      <jaxb:factoryMethod name="PolygonNonPlanarDistancePlane"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_NON_PLANAR_POLYGON_DISTANCE_PLANEType']">
+      <jaxb:class name="PolygonNonPlanarDistancePlaneType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_NON_PLANAR_POLYGON_DISTANCE_PLANEPropertyType']">
+      <jaxb:class name="PolygonNonPlanarDistancePlanePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_NON_PLANAR_POLYGON_NORMALS_DEVIATION']">
+      <jaxb:factoryMethod name="PolygonNonPlanarNormalsDeviation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_NON_PLANAR_POLYGON_NORMALS_DEVIATIONType']">
+      <jaxb:class name="PolygonNonPlanarNormalsDeviationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_NON_PLANAR_POLYGON_NORMALS_DEVIATIONPropertyType']">
+      <jaxb:class name="PolygonNonPlanarNormalsDeviationPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_P_ORIENTATION_RINGS_SAME']">
+      <jaxb:factoryMethod name="PolygonOrientationRingsSame"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_ORIENTATION_RINGS_SAMEType']">
+      <jaxb:class name="PolygonOrientationRingsSameType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_P_ORIENTATION_RINGS_SAMEPropertyType']">
+      <jaxb:class name="PolygonOrientationRingsSamePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_R_CONSECUTIVE_POINTS_SAME']">
+      <jaxb:factoryMethod name="RingConsecutivePointsSame"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_CONSECUTIVE_POINTS_SAMEType']">
+      <jaxb:class name="RingConsecutivePointsSameType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_CONSECUTIVE_POINTS_SAMEPropertyType']">
+      <jaxb:class name="RingConsecutivePointsSamePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_R_NOT_CLOSED']">
+      <jaxb:factoryMethod name="RingNotClosed"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_NOT_CLOSEDType']">
+      <jaxb:class name="RingNotClosedType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_NOT_CLOSEDPropertyType']">
+      <jaxb:class name="RingNotClosedPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_R_SELF_INTERSECTION']">
+      <jaxb:factoryMethod name="RingSelfIntersection"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_SELF_INTERSECTIONType']">
+      <jaxb:class name="RingSelfIntersectionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_SELF_INTERSECTIONPropertyType']">
+      <jaxb:class name="RingSelfIntersectionPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_R_TOO_FEW_POINTS']">
+      <jaxb:factoryMethod name="RingTooFewPoints"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_TOO_FEW_POINTSType']">
+      <jaxb:class name="RingTooFewPointsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_R_TOO_FEW_POINTSPropertyType']">
+      <jaxb:class name="RingTooFewPointsPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_ALL_POLYGONS_WRONG_ORIENTATION']">
+      <jaxb:factoryMethod name="SolidAllPolygonsWrongOrientation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_ALL_POLYGONS_WRONG_ORIENTATIONType']">
+      <jaxb:class name="SolidAllPolygonsWrongOrientationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_ALL_POLYGONS_WRONG_ORIENTATIONPropertyType']">
+      <jaxb:class name="SolidAllPolygonsWrongOrientationPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_MULTIPLE_CONNECTED_COMPONENTS']">
+      <jaxb:factoryMethod name="SolidMultipleConnectedComponents"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_MULTIPLE_CONNECTED_COMPONENTSType']">
+      <jaxb:class name="SolidMultipleConnectedComponentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_MULTIPLE_CONNECTED_COMPONENTSPropertyType']">
+      <jaxb:class name="SolidMultipleConnectedComponentsPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_NON_MANIFOLD_EDGE']">
+      <jaxb:factoryMethod name="SolidNonManifoldEdge"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NON_MANIFOLD_EDGEType']">
+      <jaxb:class name="SolidNonManifoldEdgeType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NON_MANIFOLD_EDGEPropertyType']">
+      <jaxb:class name="SolidNonManifoldEdgePropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_NON_MANIFOLD_VERTEX']">
+      <jaxb:factoryMethod name="SolidNonManifoldVertex"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NON_MANIFOLD_VERTEXType']">
+      <jaxb:class name="SolidNonManifoldVertexType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NON_MANIFOLD_VERTEXPropertyType']">
+      <jaxb:class name="SolidNonManifoldVertexPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_NOT_CLOSED']">
+      <jaxb:factoryMethod name="SolidNotClosed"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NOT_CLOSEDType']">
+      <jaxb:class name="SolidNotClosedType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_NOT_CLOSEDPropertyType']">
+      <jaxb:class name="SolidNotClosedPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_POLYGON_WRONG_ORIENTATION']">
+      <jaxb:factoryMethod name="SolidPolygonWrongOrientation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_POLYGON_WRONG_ORIENTATIONType']">
+      <jaxb:class name="SolidPolygonWrongOrientationType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_POLYGON_WRONG_ORIENTATIONPropertyType']">
+      <jaxb:class name="SolidPolygonWrongOrientationPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_SELF_INTERSECTION']">
+      <jaxb:factoryMethod name="SolidSelfIntersection"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_SELF_INTERSECTIONType']">
+      <jaxb:class name="SolidSelfIntersectionType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_SELF_INTERSECTIONPropertyType']">
+      <jaxb:class name="SolidSelfIntersectionPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='GE_S_TOO_FEW_POLYGONS']">
+      <jaxb:factoryMethod name="SolidTooFewPolygons"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_TOO_FEW_POLYGONSType']">
+      <jaxb:class name="SolidTooFewPolygonsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='GE_S_TOO_FEW_POLYGONSPropertyType']">
+      <jaxb:class name="SolidTooFewPolygonsPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='SE_ATTRIBUTE_MISSING']">
+      <jaxb:factoryMethod name="SemanticAttributeMissing"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='SE_ATTRIBUTE_MISSINGType']">
+      <jaxb:class name="SemanticAttributeMissingType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='SE_ATTRIBUTE_MISSINGPropertyType']">
+      <jaxb:class name="SemanticAttributeMissingPropertyType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:element[@name='SE_ATTRIBUTE_WRONG_VALUE']">
+      <jaxb:factoryMethod name="SemanticAttributeWrongValue"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='SE_ATTRIBUTE_WRONG_VALUEType']">
+      <jaxb:class name="SemanticAttributeWrongValueType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="xs:complexType[@name='SE_ATTRIBUTE_WRONG_VALUEPropertyType']">
+      <jaxb:class name="SemanticAttributeWrongValuePropertyType"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+  
+</jaxb:bindings>
