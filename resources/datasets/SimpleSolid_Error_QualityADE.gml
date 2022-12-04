@@ -22,7 +22,7 @@
 							<qual:vertex2>11.5 10.0 4.5</qual:vertex2>
 						</qual:GE_R_CONSECUTIVE_POINTS_SAME>
 					</qual:error>
-					<qual:resultType>OK</qual:resultType>
+					<qual:resultType>ERROR</qual:resultType>
 				</qual:ValidationResult>
 			</qual:validationResult>
 			<bldg:lod2Solid>
