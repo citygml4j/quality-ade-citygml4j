@@ -31,9 +31,9 @@ public class Requirement extends AbstractDataType {
     public Requirement() {
     }
 
-    public Requirement(boolean enabled, RequirementType requirementType) {
-        setEnabled(enabled);
+    public Requirement(RequirementType requirementType, boolean enabled) {
         setRequirementType(requirementType);
+        setEnabled(enabled);
     }
 
     public boolean isEnabled() {

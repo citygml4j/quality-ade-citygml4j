@@ -16,6 +16,8 @@
 
 package org.citygml4j.ade.quality.model;
 
+import java.util.Locale;
+
 public enum ErrorType {
     GE_R_TOO_FEW_POINTS,
     GE_R_NOT_CLOSED,
@@ -40,9 +42,11 @@ public enum ErrorType {
     SE_ATTRIBUTE_MISSING;
 
     public static ErrorType fromValue(String value) {
-        for (ErrorType constant : ErrorType.values()) {
-            if (constant.name().equals(value)) {
-                return constant;
+        if (value != null) {
+            for (ErrorType constant : ErrorType.values()) {
+                if (constant.name().toLowerCase(Locale.ROOT).equals(value.toLowerCase(Locale.ROOT))) {
+                    return constant;
+                }
             }
         }
 

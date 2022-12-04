@@ -16,6 +16,8 @@
 
 package org.citygml4j.ade.quality.model;
 
+import java.util.Locale;
+
 public enum RingSelfIntersectionType {
     EDGE_INTERSECTION,
     VERTEX_TOUCHES_EDGE,
@@ -23,9 +25,11 @@ public enum RingSelfIntersectionType {
     DEGENERATED_RING;
 
     public static RingSelfIntersectionType fromValue(String value) {
-        for (RingSelfIntersectionType constant : RingSelfIntersectionType.values()) {
-            if (constant.name().equals(value)) {
-                return constant;
+        if (value != null) {
+            for (RingSelfIntersectionType constant : RingSelfIntersectionType.values()) {
+                if (constant.name().toLowerCase(Locale.ROOT).equals(value.toLowerCase(Locale.ROOT))) {
+                    return constant;
+                }
             }
         }
 

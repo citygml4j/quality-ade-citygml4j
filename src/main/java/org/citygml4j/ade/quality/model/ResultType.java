@@ -16,15 +16,19 @@
 
 package org.citygml4j.ade.quality.model;
 
+import java.util.Locale;
+
 public enum ResultType {
     OK,
     ERROR,
     NOT_CHECKED;
 
     public static ResultType fromValue(String value) {
-        for (ResultType constant : ResultType.values()) {
-            if (constant.name().equals(value)) {
-                return constant;
+        if (value != null) {
+            for (ResultType constant : ResultType.values()) {
+                if (constant.name().toLowerCase(Locale.ROOT).equals(value.toLowerCase(Locale.ROOT))) {
+                    return constant;
+                }
             }
         }
 

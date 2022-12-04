@@ -32,7 +32,7 @@ public class Parameter extends AbstractDataType {
         setValue(value);
     }
 
-    public Parameter(String name, String uom, String value) {
+    public Parameter(String name, String value, String uom) {
         this(name, value);
         setUom(uom);
     }

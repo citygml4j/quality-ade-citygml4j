@@ -16,6 +16,8 @@
 
 package org.citygml4j.ade.quality.model;
 
+import java.util.Locale;
+
 public enum FeatureType {
     BUILDING,
     TRANSPORTATION,
@@ -25,9 +27,11 @@ public enum FeatureType {
     LAND;
 
     public static FeatureType fromValue(String value) {
-        for (FeatureType constant : FeatureType.values()) {
-            if (constant.name().equals(value)) {
-                return constant;
+        if (value != null) {
+            for (FeatureType constant : FeatureType.values()) {
+                if (constant.name().toLowerCase(Locale.ROOT).equals(value.toLowerCase(Locale.ROOT))) {
+                    return constant;
+                }
             }
         }
 

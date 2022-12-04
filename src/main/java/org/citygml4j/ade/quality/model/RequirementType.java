@@ -16,6 +16,8 @@
 
 package org.citygml4j.ade.quality.model;
 
+import java.util.Locale;
+
 public enum RequirementType {
     R_GE_R_TOO_FEW_POINTS,
     R_GE_R_NOT_CLOSED,
@@ -39,9 +41,11 @@ public enum RequirementType {
     R_SE_ATTRIBUTES_CORRECT;
 
     public static RequirementType fromValue(String value) {
-        for (RequirementType constant : RequirementType.values()) {
-            if (constant.name().equals(value)) {
-                return constant;
+        if (value != null) {
+            for (RequirementType constant : RequirementType.values()) {
+                if (constant.name().toLowerCase(Locale.ROOT).equals(value.toLowerCase(Locale.ROOT))) {
+                    return constant;
+                }
             }
         }
 
