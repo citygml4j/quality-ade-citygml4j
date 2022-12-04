@@ -443,6 +443,7 @@ public class QualityADEMarshaller implements ADEMarshaller {
             }
 
             EdgeListPropertyType property = factory.createEdgeListPropertyType();
+            property.setEdgeList(edgeList);
             dest.setEdges(property);
         }
 
@@ -473,6 +474,7 @@ public class QualityADEMarshaller implements ADEMarshaller {
             }
 
             EdgeListPropertyType property = factory.createEdgeListPropertyType();
+            property.setEdgeList(edgeList);
             dest.setEdges(property);
         }
 
