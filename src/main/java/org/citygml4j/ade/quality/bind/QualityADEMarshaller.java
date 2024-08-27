@@ -695,7 +695,7 @@ public class QualityADEMarshaller implements ADEMarshaller {
                 JAXBElement<?> element = helper.getJAXBMarshaller().marshalJAXBElement(error);
                 if (element != null && element.getValue() instanceof AbstractErrorType) {
                     AbstractErrorPropertyType property = factory.createAbstractErrorPropertyType();
-                    property.setAbstractError((JAXBElement<? extends AbstractErrorType> ) element);
+                    property.setAbstractError((JAXBElement<? extends AbstractErrorType>) element);
                     dest.getError().add(property);
                 }
             }
